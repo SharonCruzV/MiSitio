@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <!-- Enlaza los CDN de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilo para el jumbotron */
+        .jumbotron {
+            background-image: url('https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg');
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px;
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .jumbotron h1 {
+            font-size: 36px;
+            background-color: rgba(88, 178, 175, 0.7);
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .jumbotron p {
+            background-color: rgba(88, 178, 175, 0.7);
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        /* Estilo para el menú de navegación */
+        .navbar {
+            background-color: #58B2AF;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffffff;
+            background-color: rgba(88, 178, 175, 0.7);
+        }
+
+        /* Estilo para el contenido principal */
+        .main-content {
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        /* Estilo para la sección de video */
+        .video-section {
+            padding: 30px;
+            text-align: center;
+            background-color: #58B2AF;
+            color: #ffffff;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="equipo.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Jumbotron -->
+<div class="jumbotron">
+    <h1>Tu Título Aquí</h1>
+    <p>Una frase alusiva al tema del proyecto</p>
+</div>
+
+<!-- Contenido principal -->
+<div class="container main-content">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Título de la Sección</h2>
+            <p>Texto de ejemplo para la sección principal.</p>
+            <p>Texto de ejemplo para la sección principal.</p>
+            <p>Texto de ejemplo para la sección principal.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="video-section">
+                <h2>Video</h2>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/K5pkkuiyRzk" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Enlaza el CDN de Bootstrap JavaScript (jQuery y Popper.js son requeridos) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
